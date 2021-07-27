@@ -1,0 +1,20 @@
+// 顏色
+$primary: #AA0601;
+$secondary: #650300;
+$light:#FBF2F2;
+
+// warning → 警告（黃色）
+// danger → 危險（紅色）
+
+
+// 文字大小
+$font-size-base: 1rem; //16px
+
+$font-size-sm: $font-size-base * 0.875; //14px
+
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 1.75; //28px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base; //16px

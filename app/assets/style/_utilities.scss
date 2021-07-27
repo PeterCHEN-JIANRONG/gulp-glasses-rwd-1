@@ -1,0 +1,71 @@
+// 文字大小
+// .h1{
+//   fonst-size: 
+// }
+// .h2{
+//   fonst-size: 32px;
+// }
+// .h3{
+//   fonst-size:
+// }
+// .h4{
+//   fonst-size:
+// }
+// .h5{
+//   fonst-size:
+// }
+// .h6{
+//   fonst-size:16px;
+// }
+
+
+// 文字色彩
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-white {
+  color: white;
+}
+
+// 背景色彩
+.bg-primary {
+  background-color: $primary;
+}
+
+// 間距 
+// m - margin 
+// p - padding 
+// t - top 
+// b - bottom
+
+// .mb-1{
+//   margin-bottom: 8px;
+// }
+
+
+// display flex
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+
+.align-items-center {
+  align-items: center;
+}
