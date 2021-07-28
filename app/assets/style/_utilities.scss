@@ -32,20 +32,14 @@
   color: white;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 // 背景色彩
 .bg-primary {
   background-color: $primary;
 }
-
-// 間距 
-// m - margin 
-// p - padding 
-// t - top 
-// b - bottom
-
-// .mb-1{
-//   margin-bottom: 8px;
-// }
 
 
 // display flex

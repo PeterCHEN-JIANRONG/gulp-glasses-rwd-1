@@ -1,8 +1,10 @@
 @import 'config/variables';
 @import 'config/reset';
 @import 'grid';
+@import 'spacing';
 @import 'mixin';
 @import 'base';
 @import 'utilities';
 
 @import 'layout/header';
+@import 'layout/footer';
