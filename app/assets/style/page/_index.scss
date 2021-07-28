@@ -1,0 +1,44 @@
+.index {
+  .banner {
+    height: 840px;
+    // 依照dist/assets/style/all.css 去找 dist/assets/images
+    background-image: url(../images/banner/banner.png);
+    background-size: cover;
+
+    &__main {
+      height: 840px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    &__title {
+      color: $secondary;
+      font-size: $h1-font-size;
+
+      @include pad() {
+        font-size: $h2-font-size;
+      }
+
+      @include mobile() {
+        font-size: $h3-font-size;
+      }
+    }
+
+    .sub-title {
+      color: $secondary;
+      display: block;
+      font-size: $h3-font-size;
+
+      @include pad() {
+        font-size: $h5-font-size;
+      }
+
+      @include mobile() {
+        font-size: $h6-font-size;
+      }
+    }
+  }
+
+}
