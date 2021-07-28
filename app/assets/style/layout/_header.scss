@@ -11,13 +11,16 @@
 
   &__main {
     display: flex;
-    // flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     @include mobile() {
       flex-direction: column;
+
+      .menu {
+        width: 100%;
+      }
     }
   }
 
@@ -53,23 +56,24 @@
       flex-wrap: wrap;
 
       li {
-        max-width: 50%;
+        width: 50%;
         margin: 0;
         text-align: center;
+        border: 1px solid $header-base;
       }
     }
   }
 
   .menu__link {
-    display: inline-block;
-    color: white;
+    display: block;
+    color: $header-base;
     font-size: $h5-font-size;
     font-weight: 400;
     text-decoration: none;
     padding: 38px 0;
 
     &:hover {
-      color: rgba(white, 0.85);
+      color: rgba($header-base, 0.85);
     }
 
     @include mobile() {
