@@ -1,9 +1,9 @@
 .index {
   .banner {
-    height: 840px;
     // 依照dist/assets/style/all.css 去找 dist/assets/images
-    background-image: url(../images/banner/banner.png);
+    background-image: url('../images/banner/banner.png');
     background-size: cover;
+    background-position: 50% 50%;
 
     &__main {
       height: 840px;
@@ -11,6 +11,10 @@
       flex-direction: column-reverse;
       justify-content: center;
       align-items: flex-end;
+
+      @include mobile {
+        height: 394px;
+      }
     }
 
     &__title {
@@ -267,10 +271,7 @@
       align-items: center;
 
       @include mobile() {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include position-center;
       }
     }
 
@@ -285,5 +286,258 @@
       }
     }
 
+  }
+
+  .co-brand {
+    // height: 705px;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    @include pad() {
+      padding-top: 40px;
+      padding-bottom: 56px;
+    }
+
+    @include mobile() {
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      font-size: $h2-font-size;
+      font-weight: 700;
+      color: $light-base;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @include pad() {
+        font-size: $h3-font-size;
+        margin-bottom: 32px;
+      }
+
+      @include mobile() {
+        font-size: $h5-font-size;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 49%;
+      text-align: center;
+      position: relative;
+
+      @include mobile() {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__subtitle {
+      font-size: 72px;
+      font-weight: 700;
+      color: $primary;
+      width: 100%;
+      text-align: center;
+      @include position-center;
+
+      @include pad {
+        font-size: $h3-font-size;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+
+  .recommend {
+    padding-top: 60px;
+
+    @include pad {
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+
+    @include mobile {
+      padding-top: 32px;
+    }
+
+    &__img {
+      border-radius: 4px 4px 0px 0px;
+
+      @include pad {
+        width: 100%;
+      }
+    }
+
+    &__title {
+      color: $secondary;
+      font-size: $h2-font-size;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @include pad {
+        font-size: $h3-font-size;
+        margin-bottom: 32px;
+      }
+
+      @include mobile {
+        font-size: $h5-font-size;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 23%;
+      box-shadow: 0px 2px 6px #00000029;
+      border: 1px solid #DEE2E6;
+      border-radius: 4px;
+      margin-bottom: 80px;
+
+      @include pad {
+        width: 48%;
+        margin-bottom: 32px;
+      }
+
+      @include mobile {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+
+    &__body {
+      height: 204px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+
+      @include pad {
+        padding: 24px 16px;
+      }
+    }
+
+    &__subtitle {
+      font-size: $font-size-sm;
+      font-weight: 500;
+      color: $gray-600;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      color: $gray-600;
+    }
+
+    &__time {
+      font-size: $font-size-sm;
+      color: $gray-400;
+    }
+  }
+
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    @include pad {
+      padding-top: 40px;
+      padding-bottom: 56px;
+    }
+
+    @include mobile {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    &__main {
+      max-width: 730px;
+      margin: 0 auto;
+
+      @include pad {
+        max-width: 450px;
+      }
+
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+
+    &__title {
+      font-size: $h2-font-size;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+
+      @include pad {
+        font-size: $h3-font-size;
+      }
+
+      @include mobile {
+        font-size: $h5-font-size;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__text {
+      font-size: $h5-font-size;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      margin-bottom: 16px;
+
+      @include pad {
+        margin-bottom: 8px;
+      }
+
+      label {
+        @include pad {
+          font-size: $font-size-sm;
+        }
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 40px;
+
+        @include pad {
+          margin-bottom: 20px;
+        }
+      }
+
+      .input__text {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #000000;
+        background: #AA060100;
+      }
+    }
+
+    .submit {
+      font-weight: 700;
+      padding: 16px 143px;
+      color: $light-base;
+      background: $primary;
+      border: none;
+    }
   }
 }
