@@ -309,7 +309,7 @@
     &__title {
       font-size: $h2-font-size;
       font-weight: 700;
-      color: $light-base;
+      color: $white-base;
       text-align: center;
       margin-bottom: 40px;
 
@@ -334,6 +334,7 @@
       width: 49%;
       text-align: center;
       position: relative;
+      background: $white-base;
 
       @include mobile() {
         width: 100%;
@@ -535,7 +536,7 @@
     .submit {
       font-weight: 700;
       padding: 16px 143px;
-      color: $light-base;
+      color: $white-base;
       background: $primary;
       border: none;
     }
