@@ -141,6 +141,83 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.h1 {
+  font-size: 4rem; }
+
+.h2 {
+  font-size: 3rem; }
+
+.h3 {
+  font-size: 2rem; }
+
+.h4 {
+  font-size: 1.5rem; }
+
+.h5 {
+  font-size: 1.25rem; }
+
+.h6 {
+  font-size: 1rem; }
+
+.fz-sm {
+  font-size: 0.875rem; }
+
+@media (max-width: 992px) {
+  .h1-pad {
+    font-size: 4rem; } }
+
+@media (max-width: 992px) {
+  .h2-pad {
+    font-size: 3rem; } }
+
+@media (max-width: 992px) {
+  .h3-pad {
+    font-size: 2rem; } }
+
+@media (max-width: 992px) {
+  .h4-pad {
+    font-size: 1.5rem; } }
+
+@media (max-width: 992px) {
+  .h5-pad {
+    font-size: 1.25rem; } }
+
+@media (max-width: 992px) {
+  .h6-pad {
+    font-size: 1rem; } }
+
+@media (max-width: 992px) {
+  .fz-sm-pad {
+    font-size: 0.875rem; } }
+
+@media (max-width: 767px) {
+  .h1-mb {
+    font-size: 4rem; } }
+
+@media (max-width: 767px) {
+  .h2-mb {
+    font-size: 3rem; } }
+
+@media (max-width: 767px) {
+  .h3-mb {
+    font-size: 2rem; } }
+
+@media (max-width: 767px) {
+  .h4-mb {
+    font-size: 1.5rem; } }
+
+@media (max-width: 767px) {
+  .h5-mb {
+    font-size: 1.25rem; } }
+
+@media (max-width: 767px) {
+  .h6-mb {
+    font-size: 1rem; } }
+
+@media (max-width: 767px) {
+  .fz-sm-mb {
+    font-size: 0.875rem; } }
+
 .pt-1 {
   padding-top: 8px; }
 
@@ -285,6 +362,91 @@ img {
 .mr-6 {
   margin-right: 64px; }
 
+.d-none {
+  display: none; }
+
+.d-block {
+  display: block; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.text-primary {
+  color: #AA0601; }
+
+.text-secondary {
+  color: #650300; }
+
+.text-white {
+  color: white; }
+
+.text-center {
+  text-align: center; }
+
+.text-start {
+  text-align: start; }
+
+.text-end {
+  text-align: end; }
+
+.text-decoration-none {
+  text-decoration: none; }
+
+.bg-primary {
+  background-color: #AA0601; }
+
+.bg-light {
+  background-color: #AA06010D; }
+
 body {
   /* mac, IOS 系統字體  Windows 英文系統字  微軟正黑體 Android 系統字  IOS 系統字  通用字體 */
   font-family: 'Roboto', 'Noto Sans TC', sans-serif;
@@ -303,50 +465,6 @@ h6 {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px; }
-
-.text-primary {
-  color: #AA0601; }
-
-.text-secondary {
-  color: #650300; }
-
-.text-white {
-  color: white; }
-
-.text-center {
-  text-align: center; }
-
-.text-decoration-none {
-  text-decoration: none; }
-
-.bg-primary {
-  background-color: #AA0601; }
-
-.bg-light {
-  background-color: #AA06010D; }
-
-.d-block {
-  display: block; }
-
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.justify-content-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.justify-content-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.align-items-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
 
 .btn {
   display: inline-block;
@@ -844,7 +962,8 @@ h6 {
   .index .co-brand__item {
     width: 49%;
     text-align: center;
-    position: relative; }
+    position: relative;
+    background: white; }
     @media (max-width: 767px) {
       .index .co-brand__item {
         width: 100%;
