@@ -1,10 +1,14 @@
 @import './config/variables';
 @import './config/reset';
-@import './grid';
-@import './spacing';
-@import './mixin';
+
+@import './utilities/grid';
+@import './utilities/font';
+@import './utilities/spacing';
+@import './utilities/display';
+@import './utilities/mixin';
+@import './utilities/utilities';
+
 @import './base';
-@import './utilities';
 
 @import './component/button';
 

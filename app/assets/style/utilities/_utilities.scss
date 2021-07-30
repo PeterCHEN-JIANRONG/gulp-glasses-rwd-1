@@ -1,0 +1,37 @@
+// 文字色彩
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+// 背景色彩
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-light {
+  background-color: #AA06010D;
+}

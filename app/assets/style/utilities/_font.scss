@@ -1,0 +1,121 @@
+// h1 64px
+// h2 48px
+// h3 32px
+// h4 24px
+// h5 20px
+// h6 16px
+// fz-sm 14px
+
+.h1 {
+  font-size: $h1-font-size;
+}
+
+.h2 {
+  font-size: $h2-font-size;
+}
+
+.h3 {
+  font-size: $h3-font-size;
+}
+
+.h4 {
+  font-size: $h4-font-size;
+}
+
+.h5 {
+  font-size: $h5-font-size;
+}
+
+.h6 {
+  font-size: $h6-font-size;
+}
+
+.fz-sm {
+  font-size: $font-size-sm;
+}
+
+// RWD pad 992px以下
+.h1-pad {
+  @include pad {
+    font-size: $h1-font-size;
+  }
+}
+
+.h2-pad {
+  @include pad {
+    font-size: $h2-font-size;
+  }
+}
+
+.h3-pad {
+  @include pad {
+    font-size: $h3-font-size;
+  }
+}
+
+.h4-pad {
+  @include pad {
+    font-size: $h4-font-size;
+  }
+}
+
+.h5-pad {
+  @include pad {
+    font-size: $h5-font-size;
+  }
+}
+
+.h6-pad {
+  @include pad {
+    font-size: $h6-font-size;
+  }
+}
+
+.fz-sm-pad {
+  @include pad {
+    font-size: $font-size-sm;
+  }
+}
+
+// RWD mobile 767px以下
+.h1-mb {
+  @include mobile {
+    font-size: $h1-font-size;
+  }
+}
+
+.h2-mb {
+  @include mobile {
+    font-size: $h2-font-size;
+  }
+}
+
+.h3-mb {
+  @include mobile {
+    font-size: $h3-font-size;
+  }
+}
+
+.h4-mb {
+  @include mobile {
+    font-size: $h4-font-size;
+  }
+}
+
+.h5-mb {
+  @include mobile {
+    font-size: $h5-font-size;
+  }
+}
+
+.h6-mb {
+  @include mobile {
+    font-size: $h6-font-size;
+  }
+}
+
+.fz-sm-mb {
+  @include mobile {
+    font-size: $font-size-sm;
+  }
+}
