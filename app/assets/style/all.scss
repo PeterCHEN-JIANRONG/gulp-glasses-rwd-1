@@ -2,12 +2,13 @@
 @import './config/reset';
 
 @import './utilities/grid';
+@import './utilities/text';
 @import './utilities/font';
 @import './utilities/spacing';
 @import './utilities/display';
-@import './utilities/mixin';
 @import './utilities/utilities';
 
+@import './helper/mixin';
 @import './base';
 
 @import './component/button';
@@ -15,4 +16,5 @@
 @import './layout/header';
 @import './layout/footer';
 
-@import './page/_index.scss';
+@import './page/index.scss';
+@import './page/products';

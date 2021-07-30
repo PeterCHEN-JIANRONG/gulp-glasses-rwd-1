@@ -18,16 +18,18 @@ h6 {
   line-height: 1.2;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  // display: block; //與vertical-align擇一使用
+}
 
-  // @include pad() {
-  //   max-width: 720px;
-  // }
+/* 全域 border-box */
 
-  // @include mobile() {
-  //   max-width: 375px;
-  // }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

@@ -133,20 +133,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* rwd img css，可當作是 CSS Reset 其中一個 */
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  // display: block; //與vertical-align擇一使用
-}
-
-/* 全域 border box */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}

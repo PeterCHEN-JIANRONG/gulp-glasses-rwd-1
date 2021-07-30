@@ -1,3 +1,17 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  // @include pad() {
+  //   max-width: 720px;
+  // }
+
+  // @include mobile() {
+  //   max-width: 375px;
+  // }
+}
+
 @mixin pad {
 
   // @media (max-width:768px) {
