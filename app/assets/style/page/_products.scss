@@ -1,0 +1,57 @@
+.products {
+  .banner {
+    &__list {
+      .banner__item {
+        width: 33%;
+        height: 96px;
+        border: 1px solid $gray-200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        @include pad {
+          height: 60px;
+        }
+
+        @include mobile {
+          height: 30px;
+        }
+      }
+
+      .active {
+        border-bottom: 8px solid $primary;
+      }
+    }
+
+    &__icon {
+      width: 44px;
+      height: 44px;
+      margin-right: 10px;
+
+      @include pad {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+
+      }
+
+      @include mobile {
+        height: 16px;
+        height: 16px;
+        margin-right: 2px;
+      }
+    }
+
+    .imgs-item {
+      width: 50%;
+      height: 304px;
+      background-position: center;
+      background-size: cover;
+
+      @include mobile {
+        height: 148px;
+      }
+    }
+  }
+}

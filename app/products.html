@@ -1,0 +1,33 @@
+---
+title: 產品列表頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="products">
+  <section>
+    <div class="banner">
+      <div class="container">
+        <ul class="nav banner__list d-flex justify-content-center">
+          <li class="banner__item active">
+            <img src="./assets/images/icon/icon-star.svg" class="banner__icon" alt="star-icon">
+            <h3 class="banner__title h3 h4-pad fz-sm-mb fw-medium">OPTICAL</h3>
+          </li>
+          <li class="banner__item">
+            <img src="./assets/images/icon/icon-sun.svg" class="banner__icon" alt="sun-icon">
+            <h3 class="banner__title h3 h4-pad fz-sm-mb fw-medium">SUNGLASSES</h3>
+          </li>
+          <li class="banner__item">
+            <img src="./assets/images/icon/icon-thunder.svg" class="banner__icon" alt="thunder-icon">
+            <h3 class="banner__title h3 h4-pad fz-sm-mb fw-medium">FUNCTIONAL</h3>
+          </li>
+        </ul>
+      </div>
+      <ul class="banner__imgs d-flex">
+        <li class="imgs-item" style="background-image: url('./assets/images/banner/banner-1.png');"></li>
+        <li class="imgs-item" style="background-image: url('./assets/images/banner/banner-2.png');"></li>
+      </ul>
+    </div>
+  </section>
+</div>
