@@ -21,6 +21,10 @@
 
       .active {
         border-bottom: 8px solid $primary;
+
+        @include mobile {
+          border-bottom: 4px solid $primary;
+        }
       }
     }
 
@@ -43,7 +47,7 @@
       }
     }
 
-    .imgs-item {
+    .banner__img {
       width: 50%;
       height: 304px;
       background-position: center;
