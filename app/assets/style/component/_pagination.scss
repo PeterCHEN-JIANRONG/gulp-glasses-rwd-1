@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+
+  .page-item {}
+
+  .page-link {
+    display: inline-block;
+    padding: 12px 16px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #555555;
+    vertical-align: middle;
+  }
+
+  .active {
+    background: #000;
+
+    .page-link {
+      color: $white-base;
+    }
+  }
+
+  .next-page {
+    background-color: $gray-100;
+  }
+}

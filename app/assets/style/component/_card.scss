@@ -1,0 +1,15 @@
+.card {
+  max-width: 255px;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+
+  &-img-top {
+    display: block;
+    width: 100%;
+  }
+
+  &-body {
+    padding: 16px;
+  }
+
+}
