@@ -46,7 +46,7 @@ $(document).ready(function () {
     e.preventDefault(); // $(this).toggleClass("active");
 
     locationList.classList.add('d-none');
-    locationInformation.classList.remove('d-none'); // console.log(locationInformation);
+    locationInformation.classList.remove('d-none');
   });
 });
 //# sourceMappingURL=all.js.map

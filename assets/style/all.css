@@ -136,6 +136,9 @@ table {
 .text-primary {
   color: #AA0601; }
 
+.text-primary-dark {
+  color: #9F1213; }
+
 .text-secondary {
   color: #650300; }
 
@@ -1331,7 +1334,7 @@ img {
 
 .location__title {
   padding-left: 16px;
-  border-left: 8px solid #AA0601;
+  border-left: 8px solid #9F1213;
   margin-bottom: 60px; }
   @media (max-width: 992px) {
     .location__title {
@@ -1403,15 +1406,6 @@ img {
 .location .card-body {
   padding: 16px 24px; }
 
-.location .address-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px; }
-  @media (max-width: 767px) {
-    .location .address-icon {
-      height: 20px;
-      width: 20px; } }
-
 .location .card-footer .location-button {
   display: block;
   width: 100%;
@@ -1428,47 +1422,111 @@ img {
   .location .address-item:nth-last-child(1) {
     margin-bottom: 0; }
 
+.location .address-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; }
+  @media (max-width: 767px) {
+    .location .address-icon {
+      height: 20px;
+      width: 20px; } }
+
 .location .location__information {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .location .location__information .card {
     width: 38%;
     border: 0; }
+    @media (max-width: 992px) {
+      .location .location__information .card {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .location .location__information .card {
+        display: block;
+        margin-bottom: 16px; } }
+    @media (max-width: 992px) {
+      .location .location__information .card-img-top, .location .location__information .card-main {
+        width: 48%; } }
+    @media (max-width: 767px) {
+      .location .location__information .card-img-top, .location .location__information .card-main {
+        width: 100%; } }
   .location .location__information .card-header,
   .location .location__information .card-body {
     border: 1px solid #00000020; }
   .location .location__information .map {
     width: 60%; }
+    @media (max-width: 992px) {
+      .location .location__information .map {
+        width: 100%;
+        margin-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .location .location__information .map {
+        margin-bottom: 16px; } }
+
+.faq__main {
+  padding-top: 96px;
+  padding-bottom: 160px; }
   @media (max-width: 992px) {
-    .location .location__information .card {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-bottom: 32px; }
-      .location .location__information .card-img-top {
-        width: 48%; }
-      .location .location__information .card-main {
-        width: 48%; }
-    .location .location__information .map {
-      width: 100%;
-      margin-bottom: 20px; } }
+    .faq__main {
+      padding-top: 60px;
+      padding-bottom: 96px; } }
   @media (max-width: 767px) {
-    .location .location__information .card {
-      display: block;
-      margin-bottom: 16px; }
-      .location .location__information .card-img-top {
-        width: 100%; }
-      .location .location__information .card-main {
-        width: 100%; }
-    .location .location__information .map {
-      width: 100%;
-      margin-bottom: 16px; } }
+    .faq__main {
+      padding-top: 28px;
+      padding-bottom: 56px; } }
+
+.faq__title {
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin-bottom: 60px; }
+  @media (max-width: 992px) {
+    .faq__title {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .faq__title {
+      margin-bottom: 24px; } }
+
+.faq__subtitle {
+  margin-bottom: 36px; }
+  @media (max-width: 992px) {
+    .faq__subtitle {
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .faq__subtitle {
+      margin-bottom: 24px; } }
+
+.faq__item {
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .faq__item {
+      margin-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .faq__item {
+      margin-bottom: 20px; } }
+  .faq__item:nth-last-child(1) {
+    margin-bottom: 0; }
+  .faq__item .item-title {
+    margin-bottom: 16px; }
+    @media (max-width: 767px) {
+      .faq__item .item-title {
+        margin-bottom: 8px; } }
+  .faq__item .item-text {
+    margin-left: 95px; }
+    @media (max-width: 992px) {
+      .faq__item .item-text {
+        margin-left: 60px; } }
+    @media (max-width: 767px) {
+      .faq__item .item-text {
+        margin-left: 0; } }
 
 /*# sourceMappingURL=all.css.map */
