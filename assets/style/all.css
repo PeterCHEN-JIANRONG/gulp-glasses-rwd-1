@@ -128,18 +128,49 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* rwd img css，可當作是 CSS Reset 其中一個 */
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle; }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
-/* 全域 border box */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+.text-primary {
+  color: #AA0601; }
+
+.text-secondary {
+  color: #650300; }
+
+.text-white {
+  color: white; }
+
+.text-center {
+  text-align: center; }
+
+.text-start {
+  text-align: start; }
+
+.text-end {
+  text-align: end; }
+
+.text-decoration-none {
+  text-decoration: none; }
+
+.fw-light {
+  font-weight: 300; }
+
+.fw-regular {
+  font-weight: 400; }
+
+.fw-medium {
+  font-weight: 500; }
+
+.fw-bold {
+  font-weight: 700; }
+
+.fw-black {
+  font-weight: 900; }
+
+.font-italic {
+  font-style: italic; }
 
 .h1 {
   font-size: 4rem; }
@@ -362,9 +393,6 @@ img {
 .mr-6 {
   margin-right: 64px; }
 
-.d-none {
-  display: none; }
-
 .d-block {
   display: block; }
 
@@ -372,6 +400,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.d-none {
+  display: none !important; }
 
 .flex-nowrap {
   -ms-flex-wrap: nowrap;
@@ -420,27 +451,6 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
-.text-primary {
-  color: #AA0601; }
-
-.text-secondary {
-  color: #650300; }
-
-.text-white {
-  color: white; }
-
-.text-center {
-  text-align: center; }
-
-.text-start {
-  text-align: start; }
-
-.text-end {
-  text-align: end; }
-
-.text-decoration-none {
-  text-decoration: none; }
-
 .bg-primary {
   background-color: #AA0601; }
 
@@ -461,14 +471,50 @@ h5,
 h6 {
   line-height: 1.2; }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px; }
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border-box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .btn {
   display: inline-block;
   padding: 8px 16px; }
+
+.card {
+  max-width: 255px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem; }
+  .card-img-top {
+    display: block;
+    width: 100%; }
+  .card-body {
+    padding: 16px; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .pagination .page-link {
+    display: inline-block;
+    padding: 12px 16px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #555555;
+    vertical-align: middle; }
+  .pagination .active {
+    background: #000; }
+    .pagination .active .page-link {
+      color: white; }
+  .pagination .next-page {
+    background-color: #f2f2f2; }
 
 .header {
   padding: 0 88px; }
@@ -1127,5 +1173,145 @@ h6 {
     color: white;
     background: #AA0601;
     border: none; }
+
+.products .banner__list .banner__item {
+  width: 33%;
+  height: 96px;
+  border: 1px solid #DCDCDC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer; }
+  @media (max-width: 992px) {
+    .products .banner__list .banner__item {
+      height: 60px; } }
+  @media (max-width: 767px) {
+    .products .banner__list .banner__item {
+      height: 30px; } }
+
+.products .banner__list .active {
+  border-bottom: 8px solid #AA0601; }
+  @media (max-width: 767px) {
+    .products .banner__list .active {
+      border-bottom: 4px solid #AA0601; } }
+
+.products .banner__icon {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px; }
+  @media (max-width: 992px) {
+    .products .banner__icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 8px; } }
+  @media (max-width: 767px) {
+    .products .banner__icon {
+      height: 16px;
+      height: 16px;
+      margin-right: 2px; } }
+
+.products .banner .banner__img {
+  width: 50%;
+  height: 304px;
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .products .banner .banner__img {
+      height: 148px; } }
+
+.products__main {
+  padding-top: 80px; }
+  @media (max-width: 992px) {
+    .products__main {
+      padding-top: 56px; } }
+  @media (max-width: 767px) {
+    .products__main {
+      padding-top: 32px; } }
+
+.products__title {
+  margin-bottom: 40px; }
+  @media (max-width: 992px) {
+    .products__title {
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .products__title {
+      margin-bottom: 20px; } }
+
+.products .optical-block .products__item {
+  width: 24%; }
+
+.products .sunglasses-block {
+  padding-bottom: 56px; }
+  @media (max-width: 992px) {
+    .products .sunglasses-block {
+      padding-bottom: 0; } }
+  .products .sunglasses-block .navigation {
+    display: none; }
+    @media (max-width: 767px) {
+      .products .sunglasses-block .navigation {
+        display: block; } }
+  .products .sunglasses-block .products__item {
+    width: 32%; }
+
+@media (max-width: 992px) {
+  .products .optical-block .products__item,
+  .products .sunglasses-block .products__item {
+    width: 48%; } }
+
+@media (max-width: 767px) {
+  .products .optical-block .products__item,
+  .products .sunglasses-block .products__item {
+    width: 100%; } }
+
+.products__item {
+  margin-bottom: 104px; }
+  @media (max-width: 992px) {
+    .products__item {
+      margin-bottom: 72px; } }
+  @media (max-width: 767px) {
+    .products__item {
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .products__item:nth-child(n+4) {
+      display: none; } }
+  .products__item .card {
+    max-width: 100%;
+    border-radius: 0;
+    border: 0; }
+    .products__item .card-img-top {
+      width: 100%;
+      height: 164px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .products__item .card-body {
+      padding: 0; }
+    .products__item .card .color-code {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+      margin-right: 4px; }
+      @media (max-width: 767px) {
+        .products__item .card .color-code {
+          margin-right: 0px; } }
+    .products__item .card .color-primary {
+      background: #5F3E2D; }
+    .products__item .card .color-secondary {
+      background: #B75929; }
+
+.products .pagination {
+  margin-bottom: 160px; }
+  @media (max-width: 992px) {
+    .products .pagination {
+      margin-bottom: 96px; } }
+  @media (max-width: 767px) {
+    .products .pagination {
+      margin-bottom: 56px; } }
 
 /*# sourceMappingURL=all.css.map */
