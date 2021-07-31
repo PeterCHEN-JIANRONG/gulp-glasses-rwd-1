@@ -115,17 +115,6 @@
     padding: 16px 24px;
   }
 
-  .address-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-
-    @include mobile {
-      height: 20px;
-      width: 20px;
-    }
-  }
-
   .card-footer {
     .location-button {
       display: block;
@@ -149,12 +138,47 @@
     }
   }
 
+  .address-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+
+    @include mobile {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
   .location__information {
     flex-wrap: wrap;
 
     .card {
       width: 38%;
       border: 0;
+
+      @include pad {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      @include mobile {
+        display: block;
+        margin-bottom: 16px;
+      }
+
+      &-img-top,
+      &-main {
+        @include pad {
+          width: 48%;
+        }
+
+        @include mobile {
+          width: 100%;
+        }
+      }
     }
 
     .card-header,
@@ -164,49 +188,13 @@
 
     .map {
       width: 60%;
-    }
 
-    @include pad {
-
-      .card {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 32px;
-
-        &-img-top {
-          width: 48%;
-        }
-
-        &-main {
-          width: 48%;
-        }
-      }
-
-      .map {
+      @include pad {
         width: 100%;
         margin-bottom: 20px;
       }
-    }
 
-    @include mobile {
-
-      .card {
-        display: block;
-        margin-bottom: 16px;
-
-        &-img-top {
-          width: 100%;
-        }
-
-        &-main {
-          width: 100%;
-        }
-      }
-
-      .map {
-        width: 100%;
+      @include mobile {
         margin-bottom: 16px;
       }
     }
