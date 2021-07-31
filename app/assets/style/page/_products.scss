@@ -83,18 +83,62 @@
     }
   }
 
+  // RWD
+  .optical-block {
+    .products__item {
+      width: 24%;
+    }
+  }
+
+  .sunglasses-block {
+    padding-bottom: 56px;
+
+    @include pad {
+      padding-bottom: 0;
+    }
+
+    .navigation {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+    .products__item {
+      width: 32%;
+    }
+  }
+
+  .optical-block,
+  .sunglasses-block {
+    .products__item {
+      @include pad {
+        width: 48%;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
   &__item {
-    width: 24%;
     margin-bottom: 104px;
 
     @include pad {
-      width: 48%;
       margin-bottom: 72px;
     }
 
     @include mobile {
-      width: 100%;
       margin-bottom: 32px;
+    }
+
+    // ※mobile隱藏第4個開始以後所有元件
+    &:nth-child(n+4) {
+      @include mobile {
+        display: none;
+      }
     }
 
     .card {

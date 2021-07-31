@@ -10,11 +10,11 @@ current: index
     <div class="banner">
       <div class="container">
         <ul class="nav banner__list d-flex justify-content-center">
-          <li class="banner__item active">
+          <li class="banner__item active" data-category="optical">
             <img src="./assets/images/icon/icon-star.svg" class="banner__icon" alt="star-icon">
             <h3 class="banner__title h3 h4-pad fz-sm-mb fw-medium">OPTICAL</h3>
           </li>
-          <li class="banner__item">
+          <li class="banner__item" data-category="sunglasses">
             <img src="./assets/images/icon/icon-sun.svg" class="banner__icon" alt="sun-icon">
             <h3 class="banner__title h3 h4-pad fz-sm-mb fw-medium">SUNGLASSES</h3>
           </li>
@@ -36,199 +36,307 @@ current: index
         <h2 class="products__title text-center h2 h3-pad h5-mb">
           Celluloid Combi<br><span class="h3 h4-pad h6-mb">賽璐珞鈦金屬混合鏡框</span>
         </h2>
-        <ul class="products__list d-flex justify-content-between flex-wrap">
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-1.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+
+        <div class="optical-block">
+          <ul class="products__list d-flex justify-content-between flex-wrap">
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-1.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-2.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-2.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-3.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-3.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-4.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-4.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-5.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-5.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-6.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-6.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-7.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-7.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-8.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-8.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-9.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-9.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-10.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-10.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-11.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-11.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products__item">
-            <div class="card">
-              <img src="./assets/images/products/optical/products-12.jpg" class="card-img-top" alt="產品照">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
-                  <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-12.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="color-code color-primary"></div>
-                <div class="color-code color-secondary"></div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link next-page" href="#">下一頁</a></li>
+            </li>
           </ul>
-        </nav>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link next-page" href="#">下一頁</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sunglasses-block d-none">
+          <ul class="products__list d-flex justify-content-between flex-wrap">
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-1.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-2.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-3.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-4.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-5.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="card">
+                <img src="./assets/images/products/optical/products-6.jpg" class="card-img-top" alt="產品照">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title h4 fz-sm-mb">BJ41600S</h5>
+                    <span class="price h4 text-primary fz-sm-mb fw-medium">NTD3,490</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="color-code color-primary"></div>
+                  <div class="color-code color-secondary"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <nav aria-label="Page navigation example" class="navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link next-page" href="#">下一頁</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </section>
