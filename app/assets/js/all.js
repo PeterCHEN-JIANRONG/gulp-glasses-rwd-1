@@ -44,7 +44,6 @@ $(document).ready(() => {
     // $(this).toggleClass("active");
     locationList.classList.add('d-none');
     locationInformation.classList.remove('d-none');
-    // console.log(locationInformation);
   });
 
 });
