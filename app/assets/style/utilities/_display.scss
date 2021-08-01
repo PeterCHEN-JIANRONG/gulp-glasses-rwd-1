@@ -2,6 +2,10 @@
   display: inline;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 .d-block {
   display: block;
 }
@@ -11,7 +15,67 @@
 }
 
 .d-none {
-  display: none !important;
+  display: none;
+}
+
+.d-inline-pad {
+  @include pad {
+    display: inline;
+  }
+}
+
+.d-inline-block-pad {
+  @include pad {
+    display: inline-block;
+  }
+}
+
+.d-block-pad {
+  @include pad {
+    display: block;
+  }
+}
+
+.d-flex-pad {
+  @include pad {
+    display: flex;
+  }
+}
+
+.d-none-pad {
+  @include pad {
+    display: none;
+  }
+}
+
+.d-inline-mb {
+  @include mobile {
+    display: inline;
+  }
+}
+
+.d-inline-block-mb {
+  @include mobile {
+    display: inline-block;
+  }
+}
+
+.d-block-mb {
+  @include mobile {
+    display: block;
+  }
+}
+
+.d-flex-mb {
+  @include mobile {
+    display: flex;
+  }
+}
+
+.d-none-mb {
+  @include mobile {
+    display: none;
+  }
 }
 
 .flex-nowrap {

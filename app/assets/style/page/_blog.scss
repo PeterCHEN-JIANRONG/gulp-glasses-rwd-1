@@ -1,0 +1,118 @@
+.blog {
+  .navbar {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__main {
+    padding-top: 40px;
+    padding-bottom: $spacer*10;
+  }
+
+  &__title {
+    padding-left: $spacer;
+    border-left: $spacer-sm solid $primary-dark;
+    margin-bottom: 60px;
+
+    @include pad {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      margin-bottom: $spacer-m;
+    }
+  }
+
+
+  .card {
+    max-width: 100%;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    margin-bottom: 60px;
+    cursor: pointer;
+
+    @include pad {
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 96px;
+
+      @include pad {
+        margin-bottom: 64px;
+      }
+
+      @include mobile {
+        margin-bottom: 52px;
+      }
+    }
+
+    &-img-block {
+      width: 60%;
+
+      @include pad {
+        width: 50%;
+      }
+
+      @include mobile {
+        width: 100%;
+        margin-bottom: $spacer-sm;
+      }
+    }
+
+    &-top-img {
+      width: 100%;
+    }
+
+    &-main {
+      width: 40%;
+      padding-left: 30px;
+
+      @include pad {
+        width: 50%;
+      }
+
+      @include mobile {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    &-header {
+      margin-bottom: 24px;
+
+      @include pad {
+        margin-bottom: 33px;
+      }
+
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+
+    &-time {
+      opacity: 0.7;
+    }
+
+    &-body {
+      padding: 0;
+      margin-bottom: 14px;
+
+      @include pad {
+        margin-bottom: 0;
+      }
+    }
+
+    &-text {
+      color: $gray-500;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.navbar {
+  .nav__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-right: $spacer-xl;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  .nav__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $white-base;
+    font-size: $h5-font-size;
+    font-weight: 700;
+    padding: 12px 0;
+
+    &:hover {
+      color: rgba($white-base, 0.85);
+    }
+
+    @include pad {
+      font-size: $h6-font-size;
+      padding: 16px 0;
+    }
+  }
+
+  .nav__icon {
+    width: 30px;
+    height: 30px;
+  }
+}

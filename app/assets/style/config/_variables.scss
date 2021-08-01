@@ -26,6 +26,21 @@ $gray-500: #555555;
 $gray-600: #212529;
 $gray-700: #0A0A0A;
 
+// space
+$spacer: 1rem; // 16px
+// sm:  8px
+// m:   24px
+// l:   32px
+// xl:  48px
+// xxl: 64px
+// vl:  80px
+$spacer-sm: $spacer*0.5; // 8px
+$spacer-m: $spacer*1.5; // 24px
+$spacer-l: $spacer*2; // 32px
+$spacer-xl: $spacer*3; // 48px
+$spacer-xxl: $spacer*4; // 64px
+$spacer-vl: $spacer*5; // 80px
+
 // 文字大小
 $font-size-base: 1rem; //16px
 $h1-font-size: $font-size-base * 4; //64px
