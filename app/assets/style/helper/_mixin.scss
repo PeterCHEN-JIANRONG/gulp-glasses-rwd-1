@@ -4,3 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.img-horizon-reverse {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

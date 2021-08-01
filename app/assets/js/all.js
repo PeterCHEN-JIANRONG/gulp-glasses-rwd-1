@@ -46,4 +46,11 @@ $(document).ready(() => {
     locationInformation.classList.remove('d-none');
   });
 
+  // 部落格頁
+  $(".blog-article-link").click(function (e) {
+    e.preventDefault();
+    window.location = "blog_article.html"
+  });
+
+
 });

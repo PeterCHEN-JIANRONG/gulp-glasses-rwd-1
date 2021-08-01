@@ -1,4 +1,21 @@
 // text
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+// text color
 .text-primary {
   color: $primary;
 }
@@ -15,18 +32,39 @@
   color: $white-base;
 }
 
-.text-center {
-  text-align: center;
+
+// 灰階
+// 100: #f2f2f2;
+// 200: #DCDCDC;
+// 300: #6C6C6C;
+// 400: #707070;
+// 500: #555555;
+// 600: #212529;
+// 700: #0A0A0A;
+.text-gray-100 {
+  color: $gray-100;
 }
 
-.text-start {
-  text-align: start;
+.text-gray-200 {
+  color: $gray-200;
 }
 
-.text-end {
-  text-align: end;
+.text-gray-300 {
+  color: $gray-300;
 }
 
-.text-decoration-none {
-  text-decoration: none;
+.text-gray-400 {
+  color: $gray-400;
+}
+
+.text-gray-500 {
+  color: $gray-500;
+}
+
+.text-gray-600 {
+  color: $gray-600;
+}
+
+.text-gray-700 {
+  color: $gray-700;
 }

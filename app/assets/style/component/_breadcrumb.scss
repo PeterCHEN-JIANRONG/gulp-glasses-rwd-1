@@ -1,0 +1,21 @@
+.breadcrumb {
+  display: flex;
+
+  &-item {
+    margin-right: 8px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 8px;
+  }
+
+  .active {
+    color: $primary;
+  }
+}
