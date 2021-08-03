@@ -162,6 +162,7 @@
         width: 24px;
         border-radius: 4px;
         margin-right: 4px;
+        cursor: pointer;
 
         @include mobile {
           margin-right: 0px;
