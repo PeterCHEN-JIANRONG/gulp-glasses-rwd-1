@@ -22,4 +22,8 @@
   @include pad {
     padding: 0 39px;
   }
+
+  @include mobile() {
+    padding: 0 15px;
+  }
 }

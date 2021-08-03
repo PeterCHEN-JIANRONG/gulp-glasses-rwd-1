@@ -8,6 +8,18 @@
     text-decoration: none;
     border: 1px solid #555555;
     vertical-align: middle;
+
+    @include mobile {
+      padding: 10px 10px;
+      font-size: $font-size-sm;
+    }
+  }
+
+  .pre-page,
+  .next-page {
+    @include mobile {
+      padding: 10px 5px;
+    }
   }
 
   .active {
