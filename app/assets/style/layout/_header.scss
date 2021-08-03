@@ -1,5 +1,9 @@
 .header {
   padding: 0 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   @include pad() {
     padding: 0 39px;
@@ -7,24 +11,12 @@
 
   @include mobile() {
     padding: 0;
-  }
+    flex-direction: column;
 
-  &__main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    @include mobile() {
-      flex-direction: column;
-
-      .menu {
-        width: 100%;
-      }
+    .menu {
+      width: 100%;
     }
   }
-
-
 
   &__logo {
     width: 80px;
@@ -77,7 +69,6 @@
     }
 
     @include mobile() {
-      display: block;
       padding: 8px 0;
     }
   }

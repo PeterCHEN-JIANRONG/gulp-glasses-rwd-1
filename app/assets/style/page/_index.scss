@@ -5,6 +5,10 @@
     background-size: cover;
     background-position: 50% 50%;
 
+    @include mobile {
+      background-image: url('../images/banner/banner-sm.png');
+    }
+
     &__main {
       height: 840px;
       display: flex;
@@ -266,6 +270,7 @@
     }
 
     &__text {
+      text-decoration: none;
       color: $secondary;
       display: flex;
       align-items: center;

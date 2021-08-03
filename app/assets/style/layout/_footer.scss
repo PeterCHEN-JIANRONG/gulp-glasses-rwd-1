@@ -127,6 +127,15 @@
     .rule {
       margin-left: 48px;
 
+      a {
+        color: $white-base;
+        text-decoration: none;
+
+        &:hover {
+          color: rgba($header-base, 0.85);
+        }
+      }
+
       @include pad() {
         margin-left: 24px;
       }

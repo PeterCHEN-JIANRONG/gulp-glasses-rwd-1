@@ -1,5 +1,6 @@
 @import './config/variables';
 @import './config/reset';
+@import './config/base';
 
 @import './utilities/grid';
 @import './utilities/text';
@@ -9,7 +10,6 @@
 @import './utilities/utilities';
 
 @import './helper/mixin';
-@import './base';
 
 @import './component/button';
 @import './component/card';
