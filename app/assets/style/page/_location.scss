@@ -132,6 +132,8 @@
   }
 
   .address-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 8px;
 
     &:nth-last-child(1) {

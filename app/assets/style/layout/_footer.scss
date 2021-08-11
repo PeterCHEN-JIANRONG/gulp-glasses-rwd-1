@@ -76,6 +76,11 @@
       }
     }
 
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+
     &__text {
       color: $footer-base;
       text-decoration: none;

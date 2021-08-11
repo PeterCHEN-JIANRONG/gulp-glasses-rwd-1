@@ -539,11 +539,16 @@
     }
 
     .submit {
+      cursor: pointer;
       font-weight: 700;
       padding: 16px 143px;
       color: $white-base;
       background: $primary;
       border: none;
+
+      &:hover {
+        background-color: lighten($primary, 5);
+      }
     }
   }
 }

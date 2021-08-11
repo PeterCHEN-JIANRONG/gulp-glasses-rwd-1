@@ -1,5 +1,6 @@
 .header {
-  padding: 0 88px;
+  padding-left: 88px;
+  padding-right: 56px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,24 +33,11 @@
   .menu__list {
     display: flex;
 
-    li {
-      margin: 0 32px;
-    }
-
-    >:nth-child(1) {
-      margin-left: 0;
-    }
-
-    >:nth-child(4) {
-      margin-right: 0;
-    }
-
     @include mobile() {
       flex-wrap: wrap;
 
       li {
         width: 50%;
-        margin: 0;
         text-align: center;
         border: 1px solid $header-base;
       }
@@ -62,10 +50,11 @@
     font-size: $h5-font-size;
     font-weight: 400;
     text-decoration: none;
-    padding: 38px 0;
+    padding: 38px 32px;
 
     &:hover {
       color: rgba($header-base, 0.85);
+      background-color: darken($primary, 4);
     }
 
     @include mobile() {
