@@ -628,7 +628,8 @@ img {
     color: #AA0601; }
 
 .header {
-  padding: 0 88px;
+  padding-left: 88px;
+  padding-right: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,19 +665,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .header .menu__list li {
-      margin: 0 32px; }
-    .header .menu__list > :nth-child(1) {
-      margin-left: 0; }
-    .header .menu__list > :nth-child(4) {
-      margin-right: 0; }
     @media (max-width: 767px) {
       .header .menu__list {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
         .header .menu__list li {
           width: 50%;
-          margin: 0;
           text-align: center;
           border: 1px solid white; } }
   .header .menu__link {
@@ -685,9 +679,10 @@ img {
     font-size: 1.25rem;
     font-weight: 400;
     text-decoration: none;
-    padding: 38px 0; }
+    padding: 38px 32px; }
     .header .menu__link:hover {
-      color: rgba(255, 255, 255, 0.85); }
+      color: rgba(255, 255, 255, 0.85);
+      background-color: #960501; }
     @media (max-width: 767px) {
       .header .menu__link {
         padding: 8px 0; } }
@@ -759,6 +754,14 @@ img {
 
 .footer .address__list > :last-child {
   margin-bottom: 0; }
+
+.footer .address__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .footer .address__text {
   color: white;
@@ -1332,11 +1335,14 @@ img {
       border: 1px solid #000000;
       background: #AA060100; }
   .index .contact .submit {
+    cursor: pointer;
     font-weight: 700;
     padding: 16px 143px;
     color: white;
     background: #AA0601;
     border: none; }
+    .index .contact .submit:hover {
+      background-color: #c30701; }
 
 .products .banner__list .banner__item {
   width: 33%;
@@ -1578,6 +1584,12 @@ img {
       padding: 16px 0; } }
 
 .location .address-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 8px; }
   .location .address-item:nth-last-child(1) {
     margin-bottom: 0; }
